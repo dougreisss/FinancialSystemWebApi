@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Apis", "1 - Apis", "{DF933D80-7B10-47F9-B9CD-4C34179D1039}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", "{996B1AE2-F59D-4D91-BD2E-93101A26AC72}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infra", "3 - Infra", "{4270AE39-326E-477B-908A-D2F2ACC60FEE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Entities", "4 - Entities", "{73383029-52D8-419A-96C4-321F298797C3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Test", "5 - Test", "{C0284340-FFCB-426A-8243-EDFFC476FB32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{0D0DB396-8CF9-47CA-BB29-EFCB769F46BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D0DB396-8CF9-47CA-BB29-EFCB769F46BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D0DB396-8CF9-47CA-BB29-EFCB769F46BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D0DB396-8CF9-47CA-BB29-EFCB769F46BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D0DB396-8CF9-47CA-BB29-EFCB769F46BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0D0DB396-8CF9-47CA-BB29-EFCB769F46BB} = {73383029-52D8-419A-96C4-321F298797C3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {66C82208-271B-4EDF-9AA4-189E9C74235E}
+	EndGlobalSection
+EndGlobal
