@@ -8,8 +8,9 @@ using System.Threading.Tasks;
 
 namespace Entities.Entities
 {
+
     [Table("TB_MESSAGE")]
-    public class Message : Notifies
+    public  class Message: Notifies
     {
         [Column("MSN_ID")]
         public int Id { get; set; }
@@ -30,6 +31,8 @@ namespace Entities.Entities
         [ForeignKey("ApplicationUser")]
         [Column(Order = 1)]
         public string UserId { get; set; }
+
         public virtual ApplicationUser ApplicationUser { get; set; }
+
     }
 }

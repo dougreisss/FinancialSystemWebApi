@@ -9,10 +9,11 @@ using System.Threading.Tasks;
 
 namespace Entities.Entities
 {
-    public class ApplicationUser : IdentityUser
+    public  class ApplicationUser : IdentityUser
     {
         [Column("USR_CPF")]
-        public string Cpf { get; set; }
+        public string CPF { get; set; }
+
         [Column("USR_TIPO")]
         public TipoUsuario? Tipo { get; set; }
     }

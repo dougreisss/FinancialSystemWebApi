@@ -9,47 +9,56 @@ namespace Entities.Entities
 {
     public class Notifies
     {
+
         public Notifies()
         {
-            Notificacoes = new List<Notifies>();
+            Notitycoes = new List<Notifies>();
         }
 
         [NotMapped]
         public string NomePropriedade { get; set; }
+
         [NotMapped]
-        public string MensagemPropriedade { get; set; }
+        public string mensagem { get; set; }
+
         [NotMapped]
-        public List<Notifies> Notificacoes { get; set; }
+        public List<Notifies> Notitycoes { get; set; }
 
-        public bool ValidaPropriedadeString(string valor, string nomePropriedade)
+
+        public bool ValidarPropriedadeString(string valor, string nomePropriedade)
         {
-            if (string.IsNullOrWhiteSpace(valor)  || string.IsNullOrWhiteSpace(nomePropriedade))
+            if (string.IsNullOrWhiteSpace(valor) || string.IsNullOrWhiteSpace(nomePropriedade))
             {
-                Notificacoes.Add(new Notifies {
-                    MensagemPropriedade = "Campo Obrigatorio",
-                    NomePropriedade = nomePropriedade
-                }); 
-
-                return false;
-            }
-
-            return true;
-        }
-
-        public bool ValidaPropriedadeInt(int valor, string nomePropriedade)
-        {
-            if (valor < 1 || string.IsNullOrWhiteSpace(nomePropriedade))
-            {
-                Notificacoes.Add(new Notifies
+                Notitycoes.Add(new Notifies
                 {
-                    MensagemPropriedade = "Campo Obrigatorio",
+                    mensagem = "Campo Obrigatório",
                     NomePropriedade = nomePropriedade
                 });
 
                 return false;
+
             }
 
             return true;
         }
+
+        public bool ValidarPropriedadeInt(int valor, string nomePropriedade)
+        {
+            if (valor < 1 || string.IsNullOrWhiteSpace(nomePropriedade))
+            {
+                Notitycoes.Add(new Notifies
+                {
+                    mensagem = "Campo Obrigatório",
+                    NomePropriedade = nomePropriedade
+                });
+
+                return false;
+
+            }
+
+            return true;
+        }
+
+
     }
 }
