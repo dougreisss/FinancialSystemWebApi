@@ -33,7 +33,7 @@ namespace Infrastructure.Repository.Generics
         {
             using (var data = new ContextBase(_OptionsBuilder))
             {
-                data.Set<T>().Remove(Objeto);
+                data.Set<T>().Remove(Objeto); 
                 await data.SaveChangesAsync();
             }
         }
